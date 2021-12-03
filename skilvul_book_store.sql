@@ -147,10 +147,10 @@ MySQL [skilvulbookstore]> select min(harga) from buku;
 1 row in set (0.001 sec)
 
 -- Gunakan COUNT untuk melihat list data dengan kondisi harga buku di bawah 100000 --
-MySQL [skilvulbookstore]> select count(id) from buku where harga < 100000;
-+-----------+
-| count(id) |
-+-----------+
-|        10 |
-+-----------+
-1 row in set (0.003 sec)
+SELECT COUNT(harga) FROM buku WHERE harga < 100000;
++--------------+
+| COUNT(harga) |
++--------------+
+|           10 |
++--------------+
+1 row in set (0.000 sec)
